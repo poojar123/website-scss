@@ -1,0 +1,100 @@
+.main-navbar-1{
+    .navbar-brand 
+    {
+        @include breakpoint(mobile-max) {
+			width: 70%;
+		}
+            img{
+                margin-top:-45px;
+                @include breakpoint(mobile-max) {
+                    width: 90%;
+                    margin-top: 0px;
+                }
+                @include breakpoint(ipad-portrait) {
+                    // margin-top: 0px;
+                }
+            }
+    }
+    .navbar-nav a {
+        font-size: 14px !important;
+        padding: 0px 10px !important;
+        @include border-right (1px, solid, $color-black);
+        @include breakpoint(mobile-max) {
+            border-right: none;
+		}
+        @include breakpoint(ipad-landscape) {
+            font-size: 12px !important;
+            border-right: none;
+		}
+    }
+    .navbar-toggler {
+        @include breakpoint(mobile-max) {
+            background-color:$color-black;
+		}
+        @include breakpoint(ipad-portrait) {
+            background-color:$color-black;
+        }
+        .navbar-toggler-icon{
+            @include breakpoint(mobile-max) {
+                width: 1em;
+                height: 1em;
+            }
+        }
+    }
+
+}
+#topnavrow{
+    .top-nav{
+        @include content_center(center, center);
+    }
+    .navbar-nav{
+        @include breakpoint(mobile-max) {
+            display: contents;
+        }
+        @include breakpoint(ipad-portrait) {
+            flex-direction: row;
+        }
+            a{
+                font-size: 14px !important;
+                padding: 0px 10px !important;
+                @include breakpoint(ipad-landscape) {
+                    font-size: 12px !important;
+                }
+            }
+          
+        }
+    .textcontrols button{
+        background-color: transparent;
+
+        span{
+            font-weight: 700;
+        }
+    }
+    .border-r{
+        @include border-right (1px, solid, $color-black)
+    }
+    .dot-gird {
+        span {
+                height: 15px;
+                width: 15px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+            }
+            .dot-1 {
+                background: $color-bg-blue ;
+            }
+            .dot-2 {
+                background: $color-bg-lightest-green;
+            }
+            .dot-3 {
+                background: $color-bg-yellow;
+            }
+    }
+    .container{
+        @include breakpoint(mobile-max) {
+            justify-content: center;
+        }  
+    }
+   
+}

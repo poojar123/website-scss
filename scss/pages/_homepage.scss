@@ -1,0 +1,103 @@
+.slider-sec{
+        .carousel_caption_1{
+            bottom: 0;
+            position: absolute;
+            top: -325px;
+            @include breakpoint(mobile-max) {
+                top: -245px;
+            }
+            @include breakpoint(ipad-portrait) {
+                top: -250px;
+            }
+        
+            .slider-title{
+                background: $color-bg-medium-green;
+                color: $color-white;
+                display: inline-block;
+                padding: 0px 20px;
+                @include breakpoint(mobile-max) {
+                    font-size: 30px;
+                }
+               
+            }
+            .slider-subtitle{
+                background: $color-bg-dark-green;
+                color: $color-white;
+                display: inline-block;
+                padding: 6px 20px;
+                @include breakpoint(mobile-max) {
+                    font-size: 22px;
+                }
+                @include breakpoint(ipad-portrait) {
+                    display: block;
+                }
+            }
+            .btn-primary-1{
+                margin-top: 30px;
+            }
+          
+        }
+        img{
+            @include breakpoint(mobile-max) {
+                height: 300px;
+                object-fit: cover;
+            }
+        }
+}
+
+.develop-section{
+       padding-top: 90px;
+       padding-bottom: 90px;
+       @include breakpoint(mobile-max) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+       }
+
+      img{
+          @include center-block;
+      }
+}
+
+.service-section{
+    background: linear-gradient( to bottom,#fff, #f1f0f0);
+    padding-bottom: 80px;
+
+      .services{
+          @include content_center(space-around, center);
+          h6{
+             text-align: center;
+          }
+           .col-half-offset {
+              margin-left: 4.166666667%;
+             
+           }
+           img{
+               margin-bottom: 20px !important;
+               @include breakpoint(mobile-max) {
+                 margin-top: 25px !important;
+               }
+           }
+      }
+}
+
+.about-section{
+     background-image: url(../images/about-bg.png);
+     padding: 80px 0px;
+     margin-bottom: 90px;
+     @include bgimg;
+        
+       .about-content{
+            padding-left: 10%;
+            @include breakpoint(mobile-max) {
+               padding-left: 0px;
+            }
+
+            .about-heading h2{
+                color:$color-white;
+            }
+            .about-para p{
+                color:$color-white;
+            }
+        }
+}
+

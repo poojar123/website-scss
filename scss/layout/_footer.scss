@@ -1,0 +1,50 @@
+footer{
+    background-image: url(../images/footer-bg.png);
+    padding: 70px 0px;
+    color: $color-white;
+    @include bgimg;
+
+    .mt-3{
+        @include breakpoint(mobile-max) {
+            margin-top: 7rem !important;
+         }
+    }
+
+    ul{
+        list-style: none;
+        padding-left: 0px;;
+    }
+    a{
+        color: $color-white;
+    }
+    .footer-right-sec{
+        background-color:$color-bg-medium-dark;
+        padding: 30px;
+    }
+    table tr td {
+        padding: 10px 18px;
+        padding-left: 0px;
+    }
+    .bt-border{
+        @include border-bottom (1px, solid, #F8F8F8);
+        padding-bottom: 15px;
+    }
+    .disc-col ul{
+        margin-top: 33px;
+    }
+    .lastfoot {
+        @include breakpoint(mobile-max) {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+            p{
+                font-size: 14px;
+                margin-bottom: 0px;
+            }
+    } 
+    .footer-col-1{
+        @include breakpoint(mobile-max) {
+            display: block !important;
+        }
+    }       
+}
